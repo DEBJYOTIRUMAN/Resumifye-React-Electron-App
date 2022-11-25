@@ -1,13 +1,17 @@
 {
   "name": "resumifye",
-  "productName": "Resumifye Resume Builder Desktop App & Website in React, Electron & Tailwind CSS",
+  "productName": "Resumifye",
+  "description": "Resumifye Resume Builder Desktop App & Website in React, Electron & Tailwind CSS",
   "version": "0.1.0",
   "private": true,
-  "main": "main.js",
+  "author": "Debjyoti Das",
+  "main": "public/main.js",
+  "homepage": "./",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "electron-is-dev": "^2.0.0",
     "formik": "^2.2.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -25,7 +29,30 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "concurrently \"cross-env BROWSER=none yarn start\" \"wait-on http://localhost:3000 && npx electronmon .\""
+    "dev": "concurrently \"cross-env BROWSER=none yarn start\" \"wait-on http://localhost:3000 && npx electronmon .\"",
+    "builder": "yarn build && electron-builder -c.extraMetadata.main=build/main.js"
+  },
+  "build": {
+    "extends": null,
+    "appId": "com.resumifye.electron-react",
+    "files": [
+      "dist/**/*",
+      "build/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "mac": {
+      "icon": "build/favicon.png"
+   },
+   "win": {
+      "icon": "build/favicon.png"
+   },
+   "linux": {
+    "icon": "build/favicon.png"
+ }
   },
   "eslintConfig": {
     "extends": [
@@ -50,6 +77,7 @@
     "concurrently": "^7.4.0",
     "cross-env": "^7.0.3",
     "electron": "^21.1.1",
+    "electron-builder": "^23.6.0",
     "postcss": "^8.4.18",
     "tailwindcss": "^3.1.8",
     "wait-on": "^6.0.1"

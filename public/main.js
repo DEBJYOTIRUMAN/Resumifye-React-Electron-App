@@ -1,16 +1,23 @@
 const { app, BrowserWindow, screen } = require("electron");
+const path = require("path");
+const isDev = require("electron-is-dev");
 const isMac = process.platform === "darwin";
 
 function createMainWindow() {
-  const {width, height} = screen.getPrimaryDisplay().workAreaSize
+  const { width, height } = screen.getPrimaryDisplay().workAreaSize;
   const mainWindow = new BrowserWindow({
     width,
     height,
     resizable: true,
     autoHideMenuBar: true,
+    icon: `${path.join(__dirname, "../public/favicon.png")}`,
     backgroundColor: "#111827",
   });
-  mainWindow.loadURL("http://localhost:3000");
+  mainWindow.loadURL(
+    isDev
+      ? "http://localhost:3000"
+      : `file://${path.join(__dirname, "../build/index.html")}`
+  );
 }
 
 app.whenReady().then(() => {
