@@ -7,12 +7,12 @@ const ResumeCard = ({ project, deleteProject, index }) => {
   const navigate = useNavigate();
   return (
     <tr
-      className="dark:border-gray-700 hover:bg-[#22303c]"
+      className="border-gray-700 hover:bg-[#22303c]"
       onClick={() => navigate("/resume", { state: project })}
     >
       <th
         scope="row"
-        className="flex items-center py-4 sm:px-6 text-gray-900 whitespace-nowrap dark:text-white"
+        className="flex items-center py-4 sm:px-6 whitespace-nowrap text-white"
       >
         <img
           className="w-10 h-10 rounded-full object-cover hidden sm:inline-block"

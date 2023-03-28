@@ -14,8 +14,8 @@ const ProjectsTable = ({ projects, setProjects }) => {
   };
   return projects.length > 0 ? (
     <div className="overflow-x-auto relative shadow-md sm:rounded-lg">
-      <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-        <thead className="text-xs text-gray-700 bg-[#15202b] dark:text-gray-400">
+      <table className="w-full text-sm text-left text-gray-400">
+        <thead className="text-xs bg-[#15202b] text-gray-400">
           <tr>
             <th scope="col" className="py-3 px-3 sm:px-6">
               Project Name

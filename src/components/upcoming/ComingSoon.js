@@ -4,21 +4,21 @@ import { useNavigate } from "react-router-dom";
 const ComingSoon = () => {
   const navigate = useNavigate();
   return (
-      <section className="flex-1 min-h-screen bg-white dark:bg-gray-900 border-l border-[#38444d]">
+      <section className="flex-1 min-h-screen bg-gray-900 border-l border-[#38444d]">
         <div className="container relative flex flex-col min-h-screen px-4 py-8 mx-auto sm:px-6">
           <section className="flex items-center flex-1">
             <div className="flex flex-col w-full ">
               <h1 className="text-4xl sm:text-5xl font-extrabold text-center lg:text-7xl 2xl:text-8xl">
-                <span className="text-transparent bg-gradient-to-br bg-clip-text from-teal-500 via-indigo-500 to-sky-500 dark:from-teal-200 dark:via-indigo-300 dark:to-sky-500">
+                <span className="text-transparent bg-gradient-to-br bg-clip-text from-teal-200 via-indigo-300 to-sky-500">
                   Coming
                 </span>
 
-                <span className="text-transparent bg-gradient-to-tr bg-clip-text from-blue-500 via-pink-500 to-red-500 dark:from-sky-300 dark:via-pink-300 dark:to-red-500">
+                <span className="text-transparent bg-gradient-to-tr bg-clip-text from-sky-300 via-pink-300 to-red-500">
                   Soon
                 </span>
               </h1>
 
-              <p className="max-w-3xl mx-auto mt-6 text-lg text-center text-gray-700 dark:text-white md:text-xl">
+              <p className="max-w-3xl mx-auto mt-6 text-lg text-center text-white md:text-xl">
                 We are almost there! If you want to get notified when the
                 feature goes live, subscribe to our mailing list.
               </p>
@@ -27,7 +27,7 @@ const ComingSoon = () => {
                 <input
                   id="email"
                   type="text"
-                  className="sm:w-1/2 lg:w-1/3 px-6 py-3 text-gray-700 bg-white border rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring sm:mx-2"
+                  className="sm:w-1/2 lg:w-1/3 px-6 py-3 border rounded-md bg-gray-900 text-gray-300 border-gray-600 focus:ring-blue-300 focus:ring-opacity-40 focus:border-blue-300 focus:outline-none focus:ring sm:mx-2"
                   placeholder="Email Address"
                 />
 
@@ -40,7 +40,7 @@ const ComingSoon = () => {
                 </button>
               </div>
 
-              <p className="mt-8 text-center text-gray-700 dark:text-white text-md md:text-xl">
+              <p className="mt-8 text-center text-white text-md md:text-xl">
                 🔔Notify me when this feature is launched :)
               </p>
             </div>

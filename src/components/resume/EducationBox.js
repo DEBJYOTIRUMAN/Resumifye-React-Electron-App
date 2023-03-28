@@ -72,14 +72,14 @@ const EducationBox = ({
             <div className={style.box}>
               <label
                 htmlFor="university"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                className="block mb-2 text-sm font-medium text-gray-300"
               >
                 School/College/University
               </label>
               <input
                 type="text"
                 id="university"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none"
+                className="border text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500 outline-none"
                 placeholder="University of North Texas"
                 onChange={handleChange("university")}
                 onBlur={handleBlur("university")}
@@ -93,14 +93,14 @@ const EducationBox = ({
             <div className={style.box}>
               <label
                 htmlFor="degree"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                className="block mb-2 text-sm font-medium text-gray-300"
               >
                 Degree
               </label>
               <input
                 type="text"
                 id="degree"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none"
+                className="border text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500 outline-none"
                 placeholder="Undergraduate in Computer Science"
                 onChange={handleChange("degree")}
                 onBlur={handleBlur("degree")}
@@ -116,14 +116,14 @@ const EducationBox = ({
             <div className={style.box}>
               <label
                 htmlFor="startDegree"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                className="block mb-2 text-sm font-medium text-gray-300"
               >
                 Start Year
               </label>
               <input
                 type="text"
                 id="startDegree"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none"
+                className="border text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500 outline-none"
                 onChange={handleChange("startDegree")}
                 onBlur={handleBlur("startDegree")}
                 value={values.startDegree}
@@ -137,14 +137,14 @@ const EducationBox = ({
             <div className={style.box}>
               <label
                 htmlFor="endDegree"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                className="block mb-2 text-sm font-medium text-gray-300"
               >
                 End Year
               </label>
               <input
                 type="text"
                 id="endDegree"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none"
+                className="border text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500 outline-none"
                 onChange={handleChange("endDegree")}
                 onBlur={handleBlur("endDegree")}
                 value={values.endDegree}
@@ -161,8 +161,8 @@ const EducationBox = ({
                 type="button"
                 className={`font-medium rounded-lg px-5 py-2.5 text-center mr-5 mb-2 text-xs sm:text-sm ${
                   isValid
-                    ? "text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80"
-                    : "text-gray-900 dark:text-gray-300 bg-gray-800 dark:bg-gray-800 cursor-not-allowed hover:bg-gray-800 hover:dark:bg-gray-800"
+                    ? "text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-800 shadow-lg shadow-green-800/80"
+                    : "text-gray-300 bg-gray-800 cursor-not-allowed hover:bg-gray-800"
                 }`}
                 onClick={handleSubmit}
                 disabled={!isValid}
@@ -172,7 +172,7 @@ const EducationBox = ({
 
               <button
                 type="button"
-                className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-xs sm:text-sm px-5 py-2.5 text-center mb-2"
+                className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-800 shadow-lg shadow-red-800/80 font-medium rounded-lg text-xs sm:text-sm px-5 py-2.5 text-center mb-2"
                 onClick={() => setAddEducation(false)}
               >
                 Delete

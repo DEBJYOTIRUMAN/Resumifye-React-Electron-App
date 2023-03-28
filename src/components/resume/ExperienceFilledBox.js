@@ -12,7 +12,7 @@ const ExperienceFilledBox = ({ experienceList, setExperienceList, style }) => {
         <div key={index}>
           <div className={`${style.boxarea} mx-auto`}>
             <div className="flex justify-between items-center shadow-md rounded-lg mb-6 bg-[#15202b] p-5 border-[#38444d] border">
-              <span className="text-lg font-medium text-gray-900 dark:text-gray-300">
+              <span className="text-lg font-medium text-gray-300">
                 {list.title} at {list.company}
               </span>
               <div

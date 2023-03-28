@@ -2,17 +2,17 @@ import React from "react";
 
 const Dropdown = ({ user, signOut, navigate }) => {
   return (
-    <div className="w-44 rounded-lg divide-y divide-gray-100 shadow dark:divide-[#38444d] mr-6 ml-auto border border-[#38444d]">
-      <div className="py-3 px-4 text-sm text-gray-900 dark:text-white">
+    <div className="w-44 rounded-lg divide-y shadow divide-[#38444d] mr-6 ml-auto border border-[#38444d]">
+      <div className="py-3 px-4 text-sm text-white">
         <div>
           {user.firstName} {user.lastName}
         </div>
         <div className="font-medium truncate text-xs">{user.email}</div>
       </div>
-      <ul className="py-1 text-sm text-gray-700 dark:text-gray-200">
+      <ul className="py-1 text-sm text-gray-200">
         <li>
           <div
-            className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-slate-800 dark:hover:text-white cursor-pointer"
+            className="block py-2 px-4 hover:bg-slate-800 hover:text-white cursor-pointer"
             onClick={() => navigate("/home")}
           >
             Dashboard
@@ -20,7 +20,7 @@ const Dropdown = ({ user, signOut, navigate }) => {
         </li>
         <li>
           <div
-            className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-slate-800 dark:hover:text-white cursor-pointer"
+            className="block py-2 px-4 hover:bg-slate-800 hover:text-white cursor-pointer"
             onClick={() => navigate("/projects")}
           >
             Projects
@@ -28,7 +28,7 @@ const Dropdown = ({ user, signOut, navigate }) => {
         </li>
         <li>
           <div
-            className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-slate-800 dark:hover:text-white cursor-pointer"
+            className="block py-2 px-4 hover:bg-slate-800 hover:text-white cursor-pointer"
             onClick={() => navigate("/resume")}
           >
             Resume
@@ -37,7 +37,7 @@ const Dropdown = ({ user, signOut, navigate }) => {
       </ul>
       <div className="py-1">
         <div
-          className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-slate-800 dark:text-gray-200 dark:hover:text-white cursor-pointer"
+          className="block py-2 px-4 text-sm hover:bg-slate-800 text-gray-200 hover:text-white cursor-pointer"
           onClick={() => signOut()}
         >
           Sign out
